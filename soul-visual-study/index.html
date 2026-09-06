@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Soul visual study — three interactive mobile interface concepts.">
+  <title>Soul · Visual study</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-view="all">
+  <header class="review-bar">
+    <a class="review-brand" href="#main">Soul <span data-i18n="study"></span></a>
+    <nav class="variants" aria-label="Visual directions" data-label="directions">
+      <button data-view="paper" aria-pressed="false"><b>A</b><span data-i18n="paper"></span></button>
+      <button data-view="glass" aria-pressed="false"><b>B</b><span data-i18n="glass"></span></button>
+      <button data-view="slate" aria-pressed="false"><b>C</b><span data-i18n="slate"></span></button>
+      <button data-view="all" class="compare" aria-pressed="true" data-i18n="compare"></button>
+    </nav>
+    <div class="review-actions"><button id="language" aria-label="Switch to English">EN</button><button id="about" data-i18n="about"></button></div>
+  </header>
+  <main id="main" class="studies"></main>
+  <footer class="review-footer"><p data-i18n="reviewHint"></p><p data-i18n="demoNotice"></p></footer>
+  <dialog id="sheet" aria-labelledby="sheet-title">
+    <div class="sheet-head"><h2 id="sheet-title"></h2><button class="icon-button" id="close-sheet" data-label="close"></button></div>
+    <div id="sheet-content"></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>This HTML mockup needs JavaScript to display the three visual studies.</noscript>
+</body>
+</html>
